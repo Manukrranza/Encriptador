@@ -1,18 +1,18 @@
-// Función para encriptar el texto
+
 function encriptar() {
     var texto = document.getElementById("texto").value.toLowerCase();
     var resultado = encriptarTexto(texto);
     document.getElementById("resultado").value = resultado;
 }
 
-// Función para desencriptar el texto
+
 function desencriptar() {
     var texto = document.getElementById("texto").value.toLowerCase();
     var resultado = desencriptarTexto(texto);
     document.getElementById("resultado").value = resultado;
 }
 
-// Función para encriptar el texto
+
 function encriptarTexto(texto) {
     texto = texto.replace(/e/g, "enter");
     texto = texto.replace(/i/g, "imes");
@@ -22,7 +22,7 @@ function encriptarTexto(texto) {
     return texto;
 }
 
-// Función para desencriptar el texto
+
 function desencriptarTexto(texto) {
     texto = texto.replace(/ufat/g, "u");
     texto = texto.replace(/ober/g, "o");
@@ -32,7 +32,7 @@ function desencriptarTexto(texto) {
     return texto;
 }
 
-// Función para copiar el texto del resultado
+
 function copiar() {
     var texto = document.getElementById("resultado");
     texto.select();
